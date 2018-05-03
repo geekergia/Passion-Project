@@ -3,7 +3,7 @@ body{
 }
 
 #banner{
-	background: url('background.jpg') no-repeat center center fixed;
+	background: url('css/background.jpg') no-repeat center center fixed;
 	display: table;
 	height: 700px;
 	position: relative;
