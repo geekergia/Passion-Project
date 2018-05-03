@@ -8,19 +8,25 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
-    <script src="jquery-3.3.1.min.js"></script>
+    <script src="css/jquery-3.3.1.min.js"></script>
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="css/animate.css" rel="stylesheet" media="all">
+
 </head>
 <body>
 
 <div id="banner">
 	<div class="landing-text">
-		<h1>Hi, I'm Gianna and I write code.</h1>
-		<div class="middle">
+		<div class="text-wrapper typewriter">
+		<h2>Hi, I'm Gianna and I write code.</h2>
+		</div>
+		<div class="middle hvr-grow-shadow">
 			<img src="assets/down.png" style="width:40px;margin-top:100px">
 		</div> 
 	</div>
 </div>
 
+<section class="about">
 <div class="padding">
 	<div class="container">
 		<div class="row">
@@ -29,11 +35,14 @@
 				<img src="assets/me.png" style="width:500px;margin-top:30px">
 			</div>
 			<div class="col-sm-6 text-centre">
-				<h2 style="margin-top:120px;line-height:1.6"> I'm Gia. I'm a Freshman at UP Diliman, studying Computer Science. I like Sinigang.</h2>
+				<h2 class="bio"> I'm Gia. I'm a Freshman at UP Diliman, studying Computer Science. I like Sinigang.</h2>
 			</div>
 		</div>
 	</div>
 </div>
+</<section>
+	
+</section>
 
 <section class="quote">
 	<div class="row text-centre">
@@ -49,20 +58,20 @@
 		<div class="row">
 			<h1> My Expertise</h1>
 			<div class="col-sm-4 text-centre">
-				<img src="assets/food.png" style="width:90px">
+				<img class="hvr-float" src="assets/food.png" style="width:90px">
 				<h2 class="icon"> Eating </h2>
 				<p>I can always lend a helping hand when it</p>
 				<p>comes to helping you finish your lunch. </p>
 			</div>
   			<div class="col-sm-4">
-  				<img src="assets/code.png" style="width:90px">
+  				<img class="hvr-float" src="assets/code.png" style="width:90px">
   				<h2 class="icon"> Code </h2>
   				<p> I design browsers with HMTL, CSS and a hint of Javascript. I love  </p>
   				<p>experimenting with code especially when it comes to</p>
   				<p>Web Development and Web Design.</p>	
   			</div>
   			<div class="col-sm-4">
-				<img src="assets/photo.png" style="width:90px">
+				<img class="hvr-float" src="assets/photo.png" style="width:90px">
 				<h2 class="icon"> Photography </h2>
 				<p> My love for photography has led me to join the org, UP Iris. </p>
 				<p>Aside from programming, making photo journals </p>
@@ -89,6 +98,7 @@
 					<p class="project-comp">The Executive Centre</p>
 					<p class="project-tags">*UI/UX Design,Development</p>
 					<p class="project-desc"> The Executive Centre is the current leading office-space provider in the Asia-Pacific. During my internship at TEC, I worked with the Software Developing Team to develop a User Interface that manages room meetings and displays schedules.</p>
+					<a class="btn" href="https://www.executivecentre.com/" role="button">Visit the Website</a>
 				</div>
 				<div class="col-sm-6 text-centre">
 					<img src="assets/prj.jpg" style="width:400px;margin-top:30px">
@@ -97,13 +107,13 @@
 	</div>
 </section>
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 	$(".middle").click(function() {
     $('html,body').animate({
-        scrollTop: $(".second").offset().top},
+        scrollTop: $(".about").offset().top},
         'slow');
-});
-</script> -->
+	});
+</script>
 
 </body>
 </html>
